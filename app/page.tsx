@@ -15,9 +15,9 @@ export default function Home() {
     <div className="antialiased overflow-x-hidden selection:bg-primary selection:text-black min-h-screen">
       <AuraBackground />
       <Navbar />
-      <main className="flex flex-col z-10 pt-40 pr-6 pl-6 relative gap-x-3 gap-y-x-3 items-center justify-center">
+      <main className="flex flex-col z-10 pt-28 md:pt-40 px-4 md:px-6 relative gap-x-3 items-center justify-center">
         <Hero />
-        <section className="z-10 w-full max-w-7xl mt-32 mr-auto mb-24 ml-auto pr-0 pl-0 relative space-y-20">
+        <section className="z-10 w-full max-w-7xl mt-16 md:mt-32 mr-auto mb-24 ml-auto relative space-y-12 md:space-y-20">
           <Intelligence />
           <MobileApp />
           <TweetEmbed />

@@ -1,6 +1,6 @@
 export default function Pricing() {
   return (
-    <div className="flex flex-col bg-[#0A0A0C] border-[#ffffff]/10 border rounded-3xl mt-24 mb-24 pt-8 pr-8 pb-16 pl-8 gap-x-16 gap-y-16">
+    <div className="flex flex-col bg-[#0A0A0C] border-[#ffffff]/10 border rounded-3xl pt-8 px-6 pb-12 md:pr-8 md:pb-16 md:pl-8 gap-10 md:gap-16">
        {/* Header Section */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 w-full">
         <div className="flex flex-col gap-6 max-w-3xl">
@@ -49,9 +49,9 @@ export default function Pricing() {
           {/* Stars Effect */}
           <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(white 1px, transparent 1px)", backgroundSize: "40px 40px", maskImage: "radial-gradient(circle, black 40%, transparent 100%)", WebkitMaskImage: "radial-gradient(circle, black 40%, transparent 100%)" }}></div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 md:p-16 min-h-[450px] pt-10 pr-10 pb-10 pl-10 relative gap-x-12 gap-y-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 p-8 md:p-16 min-h-0 md:min-h-[450px] relative gap-10 md:gap-12">
             {/* Left Column */}
-            <div className="flex flex-col gap-8 h-full gap-x-12 gap-y-12 items-start justify-between">
+            <div className="flex flex-col gap-8 h-full items-start justify-between">
               {/* Icon & Title */}
               <div className="flex items-center gap-4">
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-sky-400">
@@ -66,7 +66,7 @@ export default function Pricing() {
               </div>
 
               {/* Price */}
-              <div className="mt-auto gap-x-12 gap-y-12">
+              <div className="mt-auto">
                 <div className="flex items-baseline gap-3 mb-2">
                   <span className="text-9xl font-light text-white tracking-tight font-oswald">
                     Free

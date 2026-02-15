@@ -46,9 +46,9 @@ export default function Testimonials() {
   const current = testimonials[currentIndex];
 
   return (
-    <div className="flex flex-col bg-[#0A0A0C] border-[#ffffff]/10 border rounded-3xl mt-24 mb-24 pt-8 pr-8 pb-16 pl-8 gap-x-16 gap-y-16">
+    <div className="flex flex-col bg-[#0A0A0C] border-[#ffffff]/10 border rounded-3xl pt-8 px-6 pb-12 md:pr-8 md:pb-16 md:pl-8 gap-10 md:gap-16">
       {/* Header Section */}
-      <div className="flex flex-col md:flex-row md:items-end gap-8 w-full gap-x-8 gap-y-8 justify-between">
+      <div className="flex flex-col md:flex-row md:items-end gap-8 w-full justify-between">
          <div className="flex flex-col gap-6 max-w-3xl">
            <div className="flex gap-3 gap-x-3 gap-y-3 items-center scroll-item scroll-fade-up">
               <span className="flex items-center justify-center text-[11px] font-medium text-blue-400 font-mono bg-blue-500/10 w-7 h-7 border-blue-500/20 border rounded-lg shadow-[0_0_10px_rgba(59,130,246,0.2)]">03</span>
@@ -68,13 +68,13 @@ export default function Testimonials() {
       </div>
 
       {/* Testimonials Carousel */}
-      <div className="overflow-hidden flex flex-col md:p-16 lg:flex-row lg:gap-20 lg:pt-4 lg:pb-4 lg:pl-4 lg:pr-8 bg-[#0A0A0C] w-full max-w-6xl border-white/10 border rounded-3xl mr-auto ml-auto pt-8 pr-8 pb-8 pl-8 relative shadow-2xl gap-x-12 gap-y-12 items-center scroll-item scroll-blur-in delay-300">
+      <div className="overflow-hidden flex flex-col md:p-16 lg:flex-row lg:gap-20 lg:pt-4 lg:pb-4 lg:pl-4 lg:pr-8 bg-[#0A0A0C] w-full max-w-6xl border-white/10 border rounded-3xl mr-auto ml-auto pt-8 pr-8 pb-8 pl-8 relative shadow-2xl gap-10 md:gap-12 items-center scroll-item scroll-blur-in delay-300">
          <div className="pointer-events-none bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#1a1a2e] via-[#0A0A0C] to-[#0A0A0C] absolute top-0 right-0 bottom-0 left-0 z-0"></div>
          <div className="z-0 opacity-20 absolute top-0 right-0 bottom-0 left-0" style={{ backgroundImage: "radial-gradient(white 1px, transparent 1px)", backgroundSize: "40px 40px" }}></div>
          
          {/* Image Section */}
-         <div className="lg:w-[55%] flex min-h-[420px] md:min-h-[520px] w-full relative items-center justify-center z-10">
-            <div className="z-10 md:w-[420px] md:h-[420px] lg:w-[480px] lg:h-[480px] group cursor-pointer overflow-hidden bg-white/5 w-80 h-80 border-0 rounded-[2.5rem] pt-1 pr-1 pb-1 pl-1 relative shadow-2xl">
+         <div className="lg:w-[55%] flex min-h-[320px] md:min-h-[520px] w-full relative items-center justify-center z-10">
+            <div className="z-10 md:w-[420px] md:h-[420px] lg:w-[480px] lg:h-[480px] group cursor-pointer overflow-hidden bg-white/5 w-64 h-64 sm:w-80 sm:h-80 border-0 rounded-[2.5rem] pt-1 pr-1 pb-1 pl-1 relative shadow-2xl">
                <img src={current.img} alt="User Profile" className={`transform transition-all duration-700 group-hover:scale-105 w-full h-full object-cover rounded-[2.2rem] ${fade ? 'opacity-0' : 'opacity-100'}`} />
             </div>
          </div>

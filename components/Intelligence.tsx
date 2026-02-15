@@ -53,7 +53,7 @@ export default function Intelligence() {
   }, []);
 
   return (
-    <div className="flex flex-col bg-[#0A0A0C] border-[#ffffff]/10 border rounded-3xl mt-24 mb-24 pt-8 pr-8 pb-16 pl-8 gap-x-16 gap-y-16">
+    <div className="flex flex-col bg-[#0A0A0C] border-[#ffffff]/10 border rounded-3xl pt-8 px-6 pb-12 md:pr-8 md:pb-16 md:pl-8 gap-10 md:gap-16">
       {/* Header Section */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 w-full">
         <div className="flex flex-col gap-6 max-w-3xl">
@@ -82,10 +82,10 @@ export default function Intelligence() {
       </div>
 
       {/* Features Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:auto-rows-[400px] gap-6 gap-x-6 gap-y-6" id="dashboard-grid" ref={containerRef}>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:auto-rows-[400px] gap-6" id="dashboard-grid" ref={containerRef}>
         
         {/* ROI Prediction -> Infrastructure */}
-        <div className="relative h-[400px] rounded-[2rem] bg-[#0A0A0C] border border-white/10 p-8 overflow-hidden flex flex-col justify-between group hover:border-white/[0.15] transition-colors scroll-item scroll-fade-up delay-100">
+        <div className="relative h-auto min-h-[400px] md:h-[400px] rounded-[2rem] bg-[#0A0A0C] border border-white/10 p-8 overflow-hidden flex flex-col justify-between group hover:border-white/[0.15] transition-colors scroll-item scroll-fade-up delay-100">
           {/* Background */}
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#1a1a2e] via-[#0A0A0C] to-[#0A0A0C]"></div>
           <div className="pointer-events-none absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(white 1px, transparent 1px)", backgroundSize: "40px 40px" }}></div>
@@ -101,7 +101,7 @@ export default function Intelligence() {
           </div>
 
           {/* Visual */}
-          <div className="relative z-10 h-32 w-full">
+          <div className="relative z-10 h-32 w-full mt-8 md:mt-0">
             <svg className="w-full h-full overflow-visible" viewBox="0 0 100 50" preserveAspectRatio="none">
               <path d="M0 45 L100 45" stroke="rgba(255,255,255,0.06)" strokeWidth="1" strokeDasharray="4 4"></path>
               <path d="M0 25 L100 25" stroke="rgba(255,255,255,0.06)" strokeWidth="1" strokeDasharray="4 4"></path>
@@ -128,7 +128,7 @@ export default function Intelligence() {
         </div>
 
         {/* CASHFLOW -> Offline Pipeline */}
-        <div className="relative rounded-[2rem] bg-[#0A0A0C] border border-white/10 p-8 overflow-hidden flex flex-col h-[400px] md:h-[400px] lg:h-[824px] lg:row-span-2 group hover:border-white/[0.15] transition-colors scroll-item scroll-fade-up delay-200">
+        <div className="relative rounded-[2rem] bg-[#0A0A0C] border border-white/10 p-8 overflow-hidden flex flex-col h-auto min-h-[400px] md:h-[400px] lg:h-[824px] lg:row-span-2 group hover:border-white/[0.15] transition-colors scroll-item scroll-fade-up delay-200">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#1a1a2e] via-[#0A0A0C] to-[#0A0A0C]"></div>
           <div className="pointer-events-none absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(white 1px, transparent 1px)", backgroundSize: "40px 40px", maskImage: "radial-gradient(circle, black 40%, transparent 100%)", WebkitMaskImage: "radial-gradient(circle, black 40%, transparent 100%)" }}></div>
 
@@ -141,8 +141,8 @@ export default function Intelligence() {
             </p>
           </div>
 
-          <div className="relative z-10 flex-1 flex items-center justify-center pt-6">
-            <svg viewBox="0 0 300 300" className="w-[320px] h-[320px] md:w-[360px] md:h-[360px] lg:w-[380px] lg:h-[380px] overflow-visible" preserveAspectRatio="xMidYMid meet">
+          <div className="relative z-10 flex-1 flex items-center justify-center pt-6 mt-8 md:mt-0">
+            <svg viewBox="0 0 300 300" className="w-[280px] h-[280px] md:w-[360px] md:h-[360px] lg:w-[380px] lg:h-[380px] overflow-visible" preserveAspectRatio="xMidYMid meet">
               <defs>
                 <filter id="glow-purple" x="-50%" y="-50%" width="200%" height="200%">
                   <feGaussianBlur stdDeviation="3" result="coloredBlur"></feGaussianBlur>
@@ -201,7 +201,7 @@ export default function Intelligence() {
         </div>
 
         {/* Engagement -> Online Pipeline */}
-        <div className="relative h-[400px] rounded-[2rem] bg-[#0A0A0C] border border-white/10 p-8 overflow-hidden flex flex-col group hover:border-white/[0.15] transition-colors scroll-item scroll-fade-up delay-300">
+        <div className="relative h-auto min-h-[400px] md:h-[400px] rounded-[2rem] bg-[#0A0A0C] border border-white/10 p-8 overflow-hidden flex flex-col group hover:border-white/[0.15] transition-colors scroll-item scroll-fade-up delay-300">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#1a1a2e] via-[#0A0A0C] to-[#0A0A0C]"></div>
           <div className="pointer-events-none absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(white 1px, transparent 1px)", backgroundSize: "40px 40px", maskImage: "radial-gradient(circle, black 40%, transparent 100%)", WebkitMaskImage: "radial-gradient(circle, black 40%, transparent 100%)" }}></div>
 
@@ -214,7 +214,7 @@ export default function Intelligence() {
             </p>
           </div>
 
-          <div className="relative z-10 flex-1 flex items-center justify-center">
+          <div className="relative z-10 flex-1 flex items-center justify-center mt-8 md:mt-0">
             <div className="absolute w-32 h-32 rounded-3xl bg-white/[0.03] border border-white/[0.05] animate-[spin-slow_20s_linear_infinite]" style={{ animationDuration: "25s" }}></div>
             <div className="absolute w-24 h-24 rounded-2xl bg-white/[0.05] border border-white/[0.05] animate-[spin-slow-reverse_15s_linear_infinite]" style={{ animationDuration: "15s" }}></div>
             <div className="w-32 h-32 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center shadow-[0_12px_30px_-10px_rgba(59,130,246,0.4)] animate-scale relative z-10">
@@ -228,7 +228,7 @@ export default function Intelligence() {
         </div>
 
         {/* Conversion -> Tech Stack / Accuracy */}
-        <div className="relative h-[400px] rounded-[2rem] bg-[#0A0A0C] border border-white/10 p-8 overflow-hidden flex flex-col justify-end group hover:border-white/[0.15] transition-colors scroll-item scroll-fade-up delay-500">
+        <div className="relative h-auto min-h-[400px] md:h-[400px] rounded-[2rem] bg-[#0A0A0C] border border-white/10 p-8 overflow-hidden flex flex-col justify-end group hover:border-white/[0.15] transition-colors scroll-item scroll-fade-up delay-500">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#1a1a2e] via-[#0A0A0C] to-[#0A0A0C]"></div>
           <div className="pointer-events-none absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(white 1px, transparent 1px)", backgroundSize: "40px 40px", maskImage: "radial-gradient(circle, black 40%, transparent 100%)", WebkitMaskImage: "radial-gradient(circle, black 40%, transparent 100%)" }}></div>
 
@@ -241,7 +241,7 @@ export default function Intelligence() {
             </div>
           </div>
 
-          <div className="relative z-10">
+          <div className="relative z-10 mt-8 md:mt-0">
             <h3 className="text-4xl font-light text-white tracking-tight font-oswald">
               Open Source
             </h3>
@@ -252,7 +252,7 @@ export default function Intelligence() {
         </div>
 
         {/* Channel Performance -> Cost Structure */}
-        <div className="relative h-[400px] rounded-[2rem] bg-[#0A0A0C] border border-white/10 p-8 overflow-hidden flex flex-col justify-end group hover:border-white/[0.15] transition-colors">
+        <div className="relative h-auto min-h-[400px] md:h-[400px] rounded-[2rem] bg-[#0A0A0C] border border-white/10 p-8 overflow-hidden flex flex-col justify-end group hover:border-white/[0.15] transition-colors">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#1a1a2e] via-[#0A0A0C] to-[#0A0A0C]"></div>
           <div className="pointer-events-none absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(white 1px, transparent 1px)", backgroundSize: "40px 40px", maskImage: "radial-gradient(circle, black 40%, transparent 100%)", WebkitMaskImage: "radial-gradient(circle, black 40%, transparent 100%)" }}></div>
 

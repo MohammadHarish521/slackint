@@ -2,7 +2,7 @@ import { Activity, Bot, Cpu, Database, FileText, Globe, LayoutGrid, Plus, Search
 
 export default function HeroVisual() {
   return (
-    <div className="flex w-full h-[750px] max-w-5xl mt-32 mr-auto ml-auto relative items-center justify-center scroll-item scroll-blur-in delay-500">
+    <div className="flex w-full h-auto md:h-[750px] max-w-5xl mt-16 md:mt-32 mr-auto ml-auto relative items-center justify-center scroll-item scroll-blur-in delay-500 px-4 md:px-0">
       {/* Floating Element: Offline Pipeline (Top Left) */}
       <div className="absolute left-0 lg:left-12 top-20 z-20 hidden md:flex items-center gap-3 p-2.5 pr-4 bg-[#111] border border-white/10 rounded-lg shadow-2xl animate-[bounce_6s_infinite]">
         <div className="w-8 h-8 rounded bg-green-900/30 flex items-center justify-center border border-green-500/20">
@@ -64,7 +64,7 @@ export default function HeroVisual() {
       </div>
 
       {/* Phone Frame */}
-      <div className="border-[8px] border-[#222] overflow-hidden flex flex-col min-h-[820px] bg-[#050505] w-full max-w-[380px] max-h-[720px] ring-white/10 ring-1 rounded-[3rem] mr-auto ml-auto relative shadow-2xl">
+      <div className="border-[8px] border-[#222] overflow-hidden flex flex-col h-[700px] md:min-h-[820px] bg-[#050505] w-full max-w-[340px] md:max-w-[380px] md:max-h-[720px] ring-white/10 ring-1 rounded-[2.5rem] md:rounded-[3rem] mr-auto ml-auto relative shadow-2xl">
         {/* Status Bar */}
         <div className="h-12 w-full flex justify-between items-end px-8 pb-2 z-20 bg-[#050505]">
           <span className="text-[13px] font-semibold text-white tracking-widest font-sans">

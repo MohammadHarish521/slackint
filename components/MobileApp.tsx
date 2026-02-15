@@ -2,9 +2,9 @@ import { ArrowRight, Bell, Plus } from "lucide-react";
 
 export default function MobileApp() {
   return (
-    <div className="flex flex-col bg-[#0A0A0C] border-[#ffffff]/10 border rounded-3xl mt-24 mb-24 pt-8 pr-8 pb-16 pl-8 gap-x-16 gap-y-16">
+    <div className="flex flex-col bg-[#0A0A0C] border-[#ffffff]/10 border rounded-3xl pt-8 px-6 pb-12 md:pr-8 md:pb-16 md:pl-8 gap-10 md:gap-16">
       {/* Hero Section */}
-      <div className="flex flex-col overflow-hidden lg:flex-row lg:gap-24 lg:pt-0 lg:pb-0 mt-12 mb-0 pt-10 pr-10 pb-10 pl-10 relative gap-x-16 gap-y-16 items-center justify-between">
+      <div className="flex flex-col overflow-hidden lg:flex-row lg:gap-24 lg:pt-0 lg:pb-0 mt-8 md:mt-12 mb-0 pt-0 md:pt-10 md:pr-10 md:pb-10 md:pl-10 relative gap-10 md:gap-16 items-center justify-between">
         
         {/* Phone Mockup (Left) */}
         <div className="z-10 shrink-0 lg:mx-0 w-full max-w-[340px] mr-auto ml-auto relative">
@@ -101,7 +101,7 @@ export default function MobileApp() {
         </div>
 
         {/* Text Content (Right) */}
-        <div className="flex flex-col md:flex-row md:items-end w-full gap-x-8 gap-y-8 justify-between">
+        <div className="flex flex-col md:flex-row md:items-end w-full gap-8 justify-between">
           <div className="flex flex-col gap-6 max-w-3xl">
             <div className="flex gap-3 gap-x-3 gap-y-3 items-center scroll-item scroll-fade-up">
               <span className="flex items-center justify-center text-[11px] font-medium text-blue-400 font-mono bg-blue-500/10 w-7 h-7 border-blue-500/20 border rounded-lg shadow-[0_0_10px_rgba(59,130,246,0.2)]">
@@ -129,14 +129,14 @@ export default function MobileApp() {
       </div>
 
       {/* Features Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 border-0 gap-x-4 gap-y-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 border-0 gap-4">
         {[
           { title: "Real-time Inference", desc: "Agentic app responding instantly within your Slack workspace." },
           { title: "Seamless Integration", desc: "Works directly where your team communicates, no context switching." },
           { title: "Automated Support", desc: "Replaces human support engineers for handling routine queries." },
           { title: "Production Ready", desc: "Robust online pipeline designed for stability and clear logs." }
         ].map((feature, i) => (
-          <div key={i} className={`md:p-12 transition-colors group overflow-hidden z-0 bg-[#0A0A0C] border-[#ffffff]/10 border rounded-3xl pt-8 pr-8 pb-8 pl-8 relative scroll-item scroll-fade-up delay-${i*100}`}>
+          <div key={i} className={`md:p-12 transition-colors group overflow-hidden z-0 bg-[#0A0A0C] border-[#ffffff]/10 border rounded-3xl p-6 relative scroll-item scroll-fade-up delay-${i*100}`}>
              <div className="pointer-events-none z-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#1a1a2e] via-[#0A0A0C] to-[#0A0A0C] absolute top-0 right-0 bottom-0 left-0"></div>
              <div className="z-0 opacity-20 rounded-3xl absolute top-0 right-0 bottom-0 left-0" style={{ backgroundImage: "radial-gradient(white 1px, transparent 1px)", backgroundSize: "40px 40px" }}></div>
              <div className="absolute inset-0 bg-white/[0.02] opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none"></div>
